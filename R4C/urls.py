@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from robots.views import *
+from api.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('export_to_excel/', export_to_excel, name='export_to_excel'),
+    path('robots/', robot),
+    path('dirc/', report),
 ]
